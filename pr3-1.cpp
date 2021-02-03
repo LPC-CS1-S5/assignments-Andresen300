@@ -6,14 +6,16 @@ using namespace std;
 int main()
 {
   const int ClassA = 15, ClassB = 12, ClassC = 9;
-  int ticketA,ticketB, ticketC;
+  int ticketA, ticketB, ticketC;
   
   cout <<"Enter the mumber of tickets sold\n";
-  cin >> ticketA, ticketB, ticketC;
+  cin >> ticketA >> ticketB >> ticketC;
 
   // Calculate
   int cost = ticketA * ClassA +  ticketB * ClassB +ticketC * ClassC;
-  
 
+  cout << setprecision(2)<< fixed;
+  cout << "Total income generated from ticket sales: $" << cost;
+  return 0;
 
 }
