@@ -16,6 +16,28 @@ int main ()
     cout <<"\nEnter the distance: ";
     cin >> distance;
 
+	/**********************************************
+	if !(weight > 0 && weight <= 20)
+	{
+		exit(0);
+	}
+
+    if !(distance > 10 && distance <=3000)
+	{
+		exit(0);
+	}
+	if ( weight < 2)
+	{
+		rate = W02;
+	}
+	else if (weight < 6)
+	{
+		rate = W26;
+	}
+	....
+	....
+	**********************************************/
+
     // input validation for weight
     if (weight > 0 && weight <= 20)
     {
