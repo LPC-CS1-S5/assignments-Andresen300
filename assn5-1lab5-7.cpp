@@ -8,19 +8,37 @@ using namespace std;
 int main()
 {
     double base = 2,
-           powernum = 2,
-           i=0, // to control how many times base gets raised to a power.
+           powernum=2,
+           i=1, // to control how many times base gets raised to a power.
            exp;
 
-    cout << "Enter the power";
+    cout << "Raise 2 to the power of (enter power) ";
     cin >> exp;
 
-
-    while (i < exp )
+    if (exp >0)
     {
-        powernum = powernum * base;
-        i++;
+        while (i < exp)
+        {
+            powernum = powernum * base;
+            i++;
+        }
     }
-    cout << "2 to the power of "<<exp<<" = "<<powernum <<endl;
+    else
+    {
+        i=-1;
+        while (i > exp)
+        {
+          powernum = powernum * base;
+          i--;
+          cout <<i << endl;
+        }
+         powernum = 1/powernum;
+    }
+    if (exp == 0)
+    {
+        powernum = 1;
+    }
+
+    cout << "2 to the power of "<< exp <<" = "<<powernum<<endl;
     return 0;
 }
