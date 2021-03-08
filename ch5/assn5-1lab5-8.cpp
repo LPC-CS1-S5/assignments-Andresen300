@@ -17,7 +17,8 @@ int main()
         {
             powernum*=2;
 
-            if (powernum > start && powernum < endn)
+            // if (powernum > start && powernum < endn)
+            if (powernum > start) // the 2nd condition was already tested when the while loop began
             {
                 cout<<powernum << endl;
             }
