@@ -8,7 +8,6 @@ int main()
   int num, i, min=20000000;
   unsigned seed = time(0);
   srand(seed);
-  num = rand()%100;
 
   for (i=0; i<5; i++)
   {
@@ -19,6 +18,6 @@ int main()
         min=num;
       }
   }
-  cout << "The minimun value is "<< num<< endl;
+  cout << "The minimun value is "<< min<< endl;
   
 }
