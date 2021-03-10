@@ -10,11 +10,14 @@ int main()
   cout << "Enter the base and the exponent 0 < N < 10,  1 <= M <= 10" << endl;
   cin >> N >> M;
 
-  while (N <= 0 || N >= 10 && M <1 || M >10)
+//   while (N <= 0 || N >= 10 && M <1 || M >10)
+  while ( (N <= 0 || N >= 10) && (M <1 || M >10) )
   {
     cout<< "Enter base and exponent again. 0 < N < 10,  1 <= M <= 10 " << endl;
     cin >> N >> M;
   }
+
+	// initail powernum as 1
 
   for (i=0; i <= M; i++)
   {
@@ -23,11 +26,25 @@ int main()
       N = 1;
       cout << N << " ";
     }
-    if (i >0)
+	else
       {
-        N = N*2;
-        cout << N << " ";
+        // N = N*2;
+		powernum = powernum * N;
+        cout << powernum << " ";
       }
   }
+//   for (i=0; i <= M; i++)
+//   {
+//     if (i ==0)
+//     {
+//       N = 1;
+//       cout << N << " ";
+//     }
+//     if (i >0)
+//       {
+//         N = N*2;
+//         cout << N << " ";
+//       }
+//   }
 
 }
