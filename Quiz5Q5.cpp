@@ -18,9 +18,22 @@ int main()
       for (prime = 3; prime < finish; prime++)
       {
         if ( prime % 2 !=0)
-        {
+        { 
           if (prime % 3 !=0)
-          cout << prime<< " ";
+          
+            if (prime % 5 !=0)
+
+              if (prime % 7 !=0)
+                cout << prime << " ";
         }
       }
-}
+
+	//   To check 10 is prime,
+	// we need a loop from 2 ~ 9
+	// to check modulus 10, e.g, 10 % 2, 10 % 3, ... 10 % 9
+	// num = 10;
+	// for( i=2; i<num; i++)
+	//.    if( num % i == 0)
+	//          do something
+
+i don't understand 
