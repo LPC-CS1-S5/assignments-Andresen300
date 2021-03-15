@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
   ifstream inputf;
-  int EmployeeID, num, i ; // to hold for how many employee to process.
+  int EmployeeID, num=2, i ; // to hold for how many employee to process.
   string EmployeeName, DepartmentName;
   double Salary, average, counter, totalSalary=0;
   //Open the file
@@ -18,7 +18,11 @@ int main()
     cout <<num << endl;
     for (i=0; i<num;i++)
     {
-      inputf>>EmployeeID >>EmployeeName >> DepartmentName >>Salary;
+      inputf>>EmployeeID;
+      inputf>>EmployeeName;
+      inputf >> DepartmentName;
+      inputf >>Salary;
+
       cout <<EmployeeID << " "<<EmployeeName <<" "<< DepartmentName<<" "<<Salary << endl;
       totalSalary+=Salary;
       counter+=1;
