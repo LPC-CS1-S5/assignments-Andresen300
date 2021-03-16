@@ -1,9 +1,3 @@
-Victoria
-90
-80
-Tim
-90
-88
-Ann
-80
-75
+Tim 95 85
+Victoria 95 90
+Ann 75 80

@@ -26,9 +26,7 @@ int main()
     cout << "Entere student name and two scores\n";
     cin >> stuName;
     cin >> score1 >> score2;
-    ofs << stuName << endl;
-    ofs << score1 <<endl;
-    ofs << score2 << endl;
+    ofs << stuName << " " << score1 << " "<< score2 <<;
     
   }
   ofs.close();
