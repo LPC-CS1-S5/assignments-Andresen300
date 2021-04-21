@@ -20,7 +20,7 @@ int main()
     cin >> shiftcount;
 
     printout (num, SIZE);
-    shiftleft ( num, SIZE, shiftcount);
+    shiftleft ( num, shiftcount, SIZE);
     printout (num, SIZE);
 }
 

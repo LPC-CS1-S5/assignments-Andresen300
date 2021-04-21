@@ -28,9 +28,10 @@ int main()
 
     sumfold(numbers,sum, SIZE);
     cout << "   Sum of numbers from the numbers array "<< endl;
-    printout(sum, SIZE);
+    printout(sum, SIZE/2);
 
     equalfold  (numbers, equal, SIZE);
+    cout << "   Equal of numbers from the numbers array "<< endl;
     printout (equal, ceil(SIZE/2.0));
 }
 
@@ -44,7 +45,7 @@ void makearray (int numbers[], int size)
 }
 void printout(int numbers[], int size)
 {
-    for(int i = 0; i < SIZE; i++)
+    for(int i = 0; i < size; i++)
     {
         cout << setw(5) << numbers[i];
     }
