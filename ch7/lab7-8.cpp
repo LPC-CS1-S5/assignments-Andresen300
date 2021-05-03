@@ -31,9 +31,9 @@ int main()
 }
 
 //Function definitions
-/* Task:      read all lines from the file. Then construct the array from each field read fro the file.
+/* Task:      read all lines from the file. Then construct the array from each field               read fro the file.
               Variable cnt -- to hold the number of lines read. and index
-Data in:      this function accepts an arrays of ints and strings and size as its arguments.
+Data in:      this function accepts an arrays of ints and strings and size as its                  arguments.
 Data out:     it  returned cnt (line read) */
 int makeNameRecord ( string state[],string gender[],int year[], string name[],int count[])
 {
