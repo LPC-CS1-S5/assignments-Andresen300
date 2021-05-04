@@ -6,7 +6,7 @@
 using namespace std;
 
 //function prototype
-
+void showValue(int);
 const int N = 10;
 
 int main()
@@ -15,6 +15,6 @@ int main()
   
   for(int i = 0; i<10; i++)
   {
-    
+    showValue(number[i]);
   }
 }
