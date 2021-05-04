@@ -13,4 +13,7 @@ int main()
   result=findMax(number, from, to)
   cout << "The greatest number in a first half of an array = " << result << endl;
 }
-int findMax ()
+int findMax (number[], int from, int to)
+{
+  
+}
