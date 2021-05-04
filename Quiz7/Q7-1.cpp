@@ -11,7 +11,7 @@ int main()
 {
   double number[N] = {10, 15, 0, -25, 19, 20, 25, 30, 45, 20};
   {
-    cout << " The numbers whith adjecent difference is less than 10: \n";
+    cout << " The numbers whith adjecent difference less than 10: \n";
     findValue(number, N);
   }
 }
@@ -39,5 +39,17 @@ int main()
               cout << number[i]<< endl;
           }
       }
+      else if (i==0)
+      {
+          if(difference2 =(abs(number[i] - number[i+1])) <10)
+          cout << number[i]<< endl;
+      }
+      else if (i== 9)
+      {
+          if(difference2 =(abs(number[i] - number[i-1])) <10)
+          cout << number[i]<< endl;
+      }
     }
   }
+
+
