@@ -31,7 +31,7 @@ void printtriangle( int num[][3], int size)
       }
       else if (r == 2)
       {
-        for(c =0; c < 2; c++ )
+        for(c =0; c < 3; c++ )
         {
           cout << num[r][c] << " ";
         }
