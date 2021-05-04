@@ -13,10 +13,8 @@ int main()
 
 void printtriangle( int num[][3], int size)
 {
-  int r=0, c=0;
-  cout << " r " << r<< " c " << c<< endl;
-
-  for( r = 0; r < SIZE; r++)
+  int r, c;
+  for( r = 0; r < size; r++)
   {
       if (r==0)
       {
@@ -25,9 +23,17 @@ void printtriangle( int num[][3], int size)
       }
       else if ( r == 1)
       {
-        fro(c = 0; c < 2; c++)
+        for(c = 0; c < 2; c++)
         {
-          cout << num[r][c];
+          cout << num[r][c] << " ";
+        }
+        cout << endl;
+      }
+      else if (r == 2)
+      {
+        for(c =0; c < 2; c++ )
+        {
+          cout << num[r][c] << " ";
         }
       }
         
