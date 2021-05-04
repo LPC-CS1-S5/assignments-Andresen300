@@ -13,9 +13,23 @@ int main()
 
 void printtriangle( int num[][3], int size)
 {
-  int r, c;
-  for(r = 0; r < 1; r++)
+  int r=0, c=0;
+  cout << " r " << r<< " c " << c<< endl;
+
+  for( r = 0; r < SIZE; r++)
   {
-    cout << num[r][0] << endl;
+      if (r==0)
+      {
+        for(c =0; c < 1; c++ )
+        cout << num[r][c] << endl;
+      }
+      else if ( r == 1)
+      {
+        fro(c = 0; c < 2; c++)
+        {
+          cout << num[r][c];
+        }
+      }
+        
   }
 }
