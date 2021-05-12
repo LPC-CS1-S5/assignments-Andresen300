@@ -34,4 +34,25 @@ void printvector(vector<int> vec)
 	cout << endl;
 }
 /*In your function “deleteone( )”, find the value to be deleted and then use the member function “erase( )” with the found index as a parameter.*/ 
+void deleteone(vector<int> &vec)
+{
+      int usernum, deletecnt=0;
+      cin >> usernum;
+      vector <int>::iterator it;
+      it = find(number.beging(),number.end(),usernum);
+      //if not found the value of it will be end();
+      if(it != number.end())
+      {
+        number.erase(it);
+        deletecnt++;
+      }
+      else 
+      {
+        cout << "Not found"<< endl;
+      }
+
+      cout << usernum << "is deleted " << deletecnt << " times \n";
+	printvector(vec)
+	
+}
 
