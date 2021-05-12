@@ -19,4 +19,17 @@ int main()
   cout << "Domain check passed\n";
 }
 
-boll idcheck ( char email[])
+bool idcheck ( char email[])
+{
+  int i =0;
+  int length=0;
+  if (!isalpha(email[0]))
+    return false;
+
+  length = strlen(email);
+  
+  if (!(length >5 && length <15)
+    return false;
+  return true;
+  
+}
