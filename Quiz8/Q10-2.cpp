@@ -27,9 +27,19 @@ bool idcheck ( char email[])
     return false;
 
   length = strlen(email);
-  
+
   if (!(length >5 && length <15)
     return false;
   return true;
-  
+}
+bool domaincheck (char email[])
+{
+  const int DSIZE =5;
+  char domain [DSIZE][10] = {"com", "edu", "org", "net", "gov"};
+  for (int i= 0; i < DSIZE; i++)
+  {
+    if(strcpm (domain[i], email+strlen(email)-3)==0)
+    return true;
+  }
+  return false;
 }
