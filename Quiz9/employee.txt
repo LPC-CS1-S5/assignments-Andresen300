@@ -1,0 +1,6 @@
+10001 	Mary Doe 140000 IT 01 31 2020
+10002 	Kathy Doe 90000 Accounting 02 21 2018
+10003 	Rhona Smith 100000 Accounting 04 05 2015
+10004 	Elaine Smith 56000 Administration 07 18 2020
+10005 	Lorita Jonson 120000 Engineering 04 15 2019
+10006 	Smith Jonson 80000 Sales 01 15 2021

@@ -17,5 +17,6 @@ struct Date { int month;
 struct EmpRecords {int id;
                    string name;
                    int salary;
-                   string depName;
-                   Date startDay; };
+                   string depName;};
+
+
