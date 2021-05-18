@@ -12,16 +12,18 @@ struct EmpRecords {int id;
                    int month;
                    int day;
                    int year;};
-                   
-void constructArray (EmpRecords &) // To construct array with data read from the file.
+
+void constructArray (EmpRecords &); // To construct array with data read from the file.
 
 int main()
 {
   EmpRecords emp[6];  //Array of struct
-  for (int i=0; i<6; i++)
+  for ( int i=0; i<6; i++)
   {
     constructArray (emp[i]);
   }
+  for ( int i=0; i<6; i++)
+  cout << emp[i].id<< endl;
 
 }
 //the constructArray function accepts a EmpRecords variable "emp" by reference. it reads
@@ -34,5 +36,5 @@ void constructArray (EmpRecords &emp)
   {cerr << "File open error\n";
   exit(0);
   }
-  ifs >> emp[i].id;
+  ifs >> emp.id;
 }
