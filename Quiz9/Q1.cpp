@@ -10,13 +10,13 @@ The data type for each member data of structure can be declared with the built-i
 #include <string>
 
 using namespace std;
-struct Date { int month;
-              int day;
-              int year;};
 
 struct EmpRecords {int id;
                    string name;
                    int salary;
-                   string depName;};
+                   string depName;
+                   int month;
+                   int day;
+                   int year;};
 
 
