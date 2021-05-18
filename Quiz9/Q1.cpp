@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void constructArray (EmpRecords &)
+void constructArray (EmpRecords &) // To construct array with data read from the file.
 
 struct EmpRecords {int id;
                    string name;
@@ -20,5 +20,12 @@ int main()
   ifstream ifs;
   ifs.open("employee.txt");
   EmpRecords emp[6];  //Array of struct
+  for (int i=0; i<6; i++)
+  {
+    constructArray (emp[]);
+  }
 
 }
+//the constructArray function accepts a EmpRecords variable "emp" by reference. it reads
+// data from the file and stores tha input in the argument.
+void constructArray (EmpRecords &emp)
