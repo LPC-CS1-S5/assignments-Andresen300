@@ -24,6 +24,12 @@ int main()
   }
   for ( int i=0; i<3; i++)
   cout << emp[i].id<< endl;
+  cout << emp[i].name<< endl;
+  cout << emp[i].salary<< endl;
+  cout << emp[i].depName<< endl;
+  cout << emp[i].month<<"/"<< endl;
+  cout << emp[i].day<<"/"<< endl;
+  cout << emp[i].year<< endl;
 
 }
 //the constructArray function accepts a EmpRecords variable "emp" by reference. it reads
@@ -44,7 +50,7 @@ void constructArray (EmpRecords &emp)
    cin >> emp.salary;
    cout << "depName\n";
    cin >> emp.depName;
-   cout << " month, day , year";
+   cout << " month, day , year\n";
    cin >> emp.month;
    cin >> emp.day;
    cin>>emp.year;
