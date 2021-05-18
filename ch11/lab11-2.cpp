@@ -3,6 +3,7 @@
 #include <string>
 
 using namespace std;
+
 const int NUMCOURSE=2;
 struct Student   {
                     int id;
@@ -23,14 +24,14 @@ int main()
   string username;
 
   int numofRecords=makingstructurray(s[]);
-  cout << "Total number of students records is "<< numfRecords << endl;
-  for (int i=0; i<numfRecords;i++)
+  cout << "Total number of students records is "<< numofRecords << endl;
+  for (int i=0; i<numofRecords;i++)
   {
     printout(s[i]);
   }
   cout << "Enter user name to find in Student's records\n";
   cin >>username;
-  findusername(s, numfRecords, username);
+  findusername(s, numofRecords, username);
 
 }
 int makingstructurray (Student s[])
@@ -48,8 +49,8 @@ int makingstructurray (Student s[])
 	while(ifs >> s[i].id >> s[i].name >> s[i].score[0] >> s[i].score[1] )
 	{
 		s[i].sum = 0;
-		for(int idx=0; idx<NUMCOURSE; idx++)
-			s[i].sum += s[i].score[idx];
+		for(int i=0; i<NUMCOURSE; i++)
+			s[i].sum += s[i].score[i];
 		s[i].avg = s[i].sum / NUMCOURSE;
 		i++;
 	}
