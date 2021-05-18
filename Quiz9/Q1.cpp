@@ -17,12 +17,12 @@ void constructArray (EmpRecords &); // To construct array with data read from th
 
 int main()
 {
-  EmpRecords emp[6];  //Array of struct
-  for ( int i=0; i<6; i++)
+  EmpRecords emp[3];  //Array of struct
+  for ( int i=0; i<3; i++)
   {
     constructArray (emp[i]);
   }
-  for ( int i=0; i<6; i++)
+  for ( int i=0; i<3; i++)
   cout << emp[i].id<< endl;
 
 }
@@ -36,5 +36,16 @@ void constructArray (EmpRecords &emp)
   {cerr << "File open error\n";
   exit(0);
   }
-  ifs >> emp.id;
+   cout<<"Employee id"<<endl;
+   cin >>emp.id; 
+   cout <<"name"<< endl;
+   cin >> emp.name;
+   cout <<"salary\n";
+   cin >> emp.salary;
+   cout << "depName\n";
+   cin >> emp.depName;
+   cout << " month, day , year";
+   cin >> emp.month;
+   cin >> emp.day;
+   cin>>emp.year;
 }
