@@ -14,8 +14,8 @@ struct EmpRecords {int id;
                    int year;};
 
 void constructArray (EmpRecords &, ifstream &); //construct array with data from the file.
-void findSalary (EmpRecords, int);
-void findDepartment(EmpRecords, int);
+void findSalary (EmpRecords[], int);
+void findDepartment(EmpRecords[], int);
 
 int main()
 {
@@ -31,7 +31,7 @@ int main()
   {
     constructArray (emp[i], ifs);
   }
-  for ( int i=0; i<3; i++)
+  for ( int i=0; i<NUM_EMPLOYEES; i++)
   {
   cout << emp[i].id<< endl;
   cout << emp[i].name<< endl;
@@ -59,11 +59,12 @@ void constructArray (EmpRecords &emp, ifstream &ifs)
 }
 // to find employees with a user specifide salary. pass an structure array to look thrugh 
 // each salary 
-void findSalary (EmpRecords emp[], size)
+void findSalary (EmpRecords emp[], int size)
 {
   int userinput;
   cout << "Enter a salary you want to find\n";
   cin >>userinput;
+  bool found = false;
   for (int i=0; i<size; i++)
   {
     if (userinput < emp[i].salary)
@@ -75,18 +76,19 @@ void findSalary (EmpRecords emp[], size)
       cout << emp[i].month<<"/";
       cout << emp[i].day<<"/";
       cout << emp[i].year<< endl; 
+      found = true;
     }
-    else 
-    { 
-      cout <<"There is no employees with a salary greater than "<<userinput << endl;
-    }
+    
   }
+   if (!found) 
+      cout <<"There is no employees with a salary greater than "<<userinput << endl;
 }
-void findDepartment (EmpRecords emp[], size)
+void findDepartment (EmpRecords emp[], int size)
 {
   string userinput;
   cout << "Enter a department \n";
   cin >> userinput;
+  bool found= false;
   for(int i=0; i<size; i++)
   {
     if (userinput == emp[i].depName)
@@ -98,10 +100,10 @@ void findDepartment (EmpRecords emp[], size)
       cout << emp[i].month<<"/";
       cout << emp[i].day<<"/";
       cout << emp[i].year<< endl; 
+      found=true;
     }
-    else 
-    { 
-      cout <<"There is no employees with a salary greater than "<<userinput << endl;
-    }
+      
   }
+  if(!found)
+  cout <<"There is no employees with a salary greater than "<<userinput << endl;
 }
