@@ -1,4 +1,4 @@
-#include <iostrea>
+#include <iostream>
 
 
 using namespace std;
@@ -18,7 +18,7 @@ int main()
         {
             if (numbers1[j]== numbers2[j])
             {
-              
+              cout<< numbers1;
             }
           
         }
